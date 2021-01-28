@@ -1,19 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  <component name="ChangeListManager">
+    <list default="true" id="899ca2b5-f2fe-44d1-b09c-186996f29d93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tourism_app/tourism_app/assets/img/asset_ancol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourism_app/tourism_app/lib/dummy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourism_app/tourism_app/lib/home_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tourism_app/tourism_app/lib/tourisms.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ne06eDC7QSrFvute0r5Z78WP7v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="899ca2b5-f2fe-44d1-b09c-186996f29d93" name="Default Changelist" comment="" />
+      <created>1611735074139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611735074139</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="302" y="347" key="Github.ShareDialog" timestamp="1611735127718">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="302" y="347" key="Github.ShareDialog/0.23.1440.877@0.23.1440.877" timestamp="1611735127718" />
+    <state x="132" y="169" key="Github.UntrackedFilesDialog" timestamp="1611735135871">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="132" y="169" key="Github.UntrackedFilesDialog/0.23.1440.877@0.23.1440.877" timestamp="1611735135871" />
   </component>
 </project>
