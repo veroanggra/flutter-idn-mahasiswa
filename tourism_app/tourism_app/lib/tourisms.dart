@@ -1,5 +1,10 @@
 class Tourisms {
-  String name, address, description, schedule, ticket, photo;
+  String name;
+  String address;
+  String description;
+  String schedule;
+  String ticket;
+  String photo;
   List<String> imgurl;
 
   Tourisms({

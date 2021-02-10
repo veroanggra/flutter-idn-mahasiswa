@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899ca2b5-f2fe-44d1-b09c-186996f29d93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tourism_app/tourism_app/assets/img/asset_ancol.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tourism_app/tourism_app/lib/dummy.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tourism_app/tourism_app/lib/home_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tourism_app/tourism_app/lib/tourisms.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,9 +38,25 @@
       <option name="presentableId" value="Default" />
       <updated>1611735074139</updated>
     </task>
+    <task id="LOCAL-00001" summary="tourism">
+      <created>1611834143033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611834143033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tourism" />
+    <option name="LAST_COMMIT_MESSAGE" value="tourism" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="192" y="131" key="CommitChangelistDialog2" timestamp="1611834142816">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="192" y="131" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1611834142816" />
     <state x="302" y="347" key="Github.ShareDialog" timestamp="1611735127718">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -53,5 +65,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="132" y="169" key="Github.UntrackedFilesDialog/0.23.1440.877@0.23.1440.877" timestamp="1611735135871" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1611834149380">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1611834149380" />
   </component>
 </project>
