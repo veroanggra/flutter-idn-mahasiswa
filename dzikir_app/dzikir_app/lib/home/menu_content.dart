@@ -1,8 +1,8 @@
-import 'package:dzikir_app/content_doa.dart';
-import 'package:dzikir_app/content_dzikir.dart';
-import 'package:dzikir_app/content_nabi.dart';
-import 'package:dzikir_app/content_tasbih.dart';
-import 'package:dzikir_app/custom_widget.dart';
+import 'package:dzikir_app/doa/all_doa_list.dart';
+import 'package:dzikir_app/dzikir/content_dzikir.dart';
+import 'package:dzikir_app/nabi/content_nabi.dart';
+import 'package:dzikir_app/tasbih/content_tasbih.dart';
+import 'package:dzikir_app/utils/custom_widget.dart';
 import 'package:flutter/material.dart';
 
 class ContentMenu extends StatelessWidget {
@@ -237,7 +237,7 @@ class ContentMenu extends StatelessWidget {
                                 },
                                 pageBuilder:
                                     (context, animation, animationTime) {
-                                  return ContentDoa();
+                                  return AllDoaList();
                                 }));
                       },
                       child: Row(
@@ -272,8 +272,6 @@ class ContentMenu extends StatelessWidget {
                     ),
                   ),
                 )
-
-
               ],
             ),
           )

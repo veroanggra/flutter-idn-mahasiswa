@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'header_content.dart';
+import '../doa/list_doa.dart';
 import 'menu_content.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,6 +13,7 @@ class HomeScreen extends StatelessWidget {
           children: <Widget>[
             HeaderContent(),
             ContentMenu(),
+            ListDoa()
           ],
         ),
       ),
