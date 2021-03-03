@@ -1,7 +1,6 @@
-
 import 'package:dio/dio.dart';
 import 'package:portal_berita/model/article_response.dart';
-import 'package:portal_berita/model/sources_response.dart';
+import 'package:portal_berita/model/source_response.dart';
 
 class NewsRepositories {
   static String baseUrl = 'http://newsapi.org/v2/';
@@ -12,15 +11,15 @@ class NewsRepositories {
   var getHeadLineUrl = '$baseUrl/top-headlines';
   var getEverything = '$baseUrl/everything';
 
-  Future<SourcesResponse> getSources() async {
+  Future<SourceResponse> getSources() async {
     var params = {'apiKey': API_KEY, 'language': 'en', 'country': 'us'};
     try {
       Response response =
           await _dio.get(getSourcesUrl, queryParameters: params);
-      return SourcesResponse.fromJson(response.data);
+      return SourceResponse.fromJson(response.data);
     } catch (error, stacktrace) {
       print('Exception accured : $error stacktrace : $stacktrace');
-      return SourcesResponse.fromJson(error);
+      return SourceResponse.withError('$error');
     }
   }
 
@@ -32,7 +31,7 @@ class NewsRepositories {
       return ArticleResponse.fromJson(response.data);
     } catch (error, stacktrace) {
       print('Exception accured : $error stacktrace : $stacktrace');
-      return ArticleResponse.fromJson(error);
+      return ArticleResponse.withError('$error');
     }
   }
 
@@ -44,7 +43,7 @@ class NewsRepositories {
       return ArticleResponse.fromJson(response.data);
     } catch (error, stacktrace) {
       print('Exception accured : $error stacktrace : $stacktrace');
-      return ArticleResponse.fromJson(error);
+      return ArticleResponse.withError('$error');
     }
   }
 
@@ -56,7 +55,7 @@ class NewsRepositories {
       return ArticleResponse.fromJson(response.data);
     } catch (error, stacktrace) {
       print('Exception accured : $error stacktrace : $stacktrace');
-      return ArticleResponse.fromJson(error);
+      return ArticleResponse.withError('$error');
     }
   }
 
@@ -68,7 +67,7 @@ class NewsRepositories {
       return ArticleResponse.fromJson(response.data);
     } catch (error, stacktrace) {
       print('Exception accured : $error stacktrace : $stacktrace');
-      return ArticleResponse.fromJson(error);
+      return ArticleResponse.withError('$error');
     }
   }
 }

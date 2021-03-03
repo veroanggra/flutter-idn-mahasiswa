@@ -1,50 +1,25 @@
-import 'package:portal_berita/model/sources.dart';
+
+import 'package:portal_berita/model/source.dart';
 
 class ArticleModel {
-  SourcesModel source;
-  String author;
-  String title;
-  String description;
-  String url;
-  String urlToImage;
-  String publishedAt;
-  String content;
+  final SourceModel source;
+  final String author;
+  final String title;
+  final String description;
+  final String url;
+  final String img;
+  final String date;
+  final String content;
 
-  ArticleModel(
-      {this.source,
-        this.author,
-        this.title,
-        this.description,
-        this.url,
-        this.urlToImage,
-        this.publishedAt,
-        this.content});
+  ArticleModel(this.source, this.author, this.title, this.description, this.url, this.img, this.date, this.content);
 
-  ArticleModel.fromJson(Map<String, dynamic> json) {
-    source =
-    json['source'] != null ? new SourcesModel.fromJson(json['source']) : null;
-    author = json['author'];
-    title = json['title'];
-    description = json['description'];
-    url = json['url'];
-    urlToImage = json['urlToImage'];
-    publishedAt = json['publishedAt'];
-    content = json['content'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (this.source != null) {
-      data['source'] = this.source.toJson();
-    }
-    data['author'] = this.author;
-    data['title'] = this.title;
-    data['description'] = this.description;
-    data['url'] = this.url;
-    data['urlToImage'] = this.urlToImage;
-    data['publishedAt'] = this.publishedAt;
-    data['content'] = this.content;
-    return data;
-  }
+  ArticleModel.fromJson(Map<String, dynamic> json)
+      : source = SourceModel.fromJson(json["source"]),
+        author = json["author"],
+        title = json["title"],
+        description = json["description"],
+        url = json["url"],
+        img = json["urlToImage"],
+        date = json["publishedAt"],
+        content = json["content"];
 }
-

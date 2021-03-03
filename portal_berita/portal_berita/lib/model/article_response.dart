@@ -1,30 +1,18 @@
+
 import 'article.dart';
 
 class ArticleResponse {
-  String status;
-  int totalResults;
-  List<ArticleModel> articles;
+  final List<ArticleModel> articles;
+  final String error;
 
-  ArticleResponse({this.status, this.totalResults, this.articles});
+  ArticleResponse(this.articles, this.error);
 
-  ArticleResponse.fromJson(Map<String, dynamic> json) {
-    status = json['status'];
-    totalResults = json['totalResults'];
-    if (json['articles'] != null) {
-      articles = new List<ArticleModel>();
-      json['articles'].forEach((v) {
-        articles.add(new ArticleModel.fromJson(v));
-      });
-    }
-  }
+  ArticleResponse.fromJson(Map<String, dynamic> json)
+      : articles =
+            (json["articles"] as List).map((i) => new ArticleModel.fromJson(i)).toList(),
+        error = "";
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['status'] = this.status;
-    data['totalResults'] = this.totalResults;
-    if (this.articles != null) {
-      data['articles'] = this.articles.map((v) => v.toJson()).toList();
-    }
-    return data;
-  }
+  ArticleResponse.withError(String errorValue)
+      : articles = List(),
+        error = errorValue;
 }
